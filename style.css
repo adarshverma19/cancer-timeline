@@ -1,0 +1,144 @@
+/* CSS Custom Properties for Theming */
+:root {
+    --bg-color: #f0f4f8; /* Light blue-gray background */
+    --text-color-primary: #1e293b; /* slate-800 */
+    --text-color-secondary: #475569; /* slate-600 */
+    --text-color-muted: #64748b; /* slate-500 */
+    --card-bg-color: white;
+    --sidebar-bg-color: white;
+    --sidebar-text-color: #334155; /* slate-700 */
+    --sidebar-item-hover-bg: #e0e7ff; /* indigo-100 */
+    --sidebar-item-active-bg: #3b82f6; /* blue-500 */
+    --sidebar-item-active-text: white;
+    --border-color: #e2e8f0; /* slate-200 */
+    --button-primary-bg: #3b82f6; /* blue-500 */
+    --button-primary-hover-bg: #2563eb; /* blue-600 */
+    --button-text-color: white;
+    --header-border-color: #cbd5e1; /* slate-300 */
+    --scrollbar-thumb-bg: #cbd5e1; /* Default scrollbar thumb */
+    --scrollbar-thumb-hover-bg: #94a3b8; /* Default scrollbar thumb hover */
+}
+
+html.dark {
+    --bg-color: #0f172a; /* slate-900 */
+    --text-color-primary: #f1f5f9; /* slate-100 */
+    --text-color-secondary: #94a3b8; /* slate-400 */
+    --text-color-muted: #64748b; /* slate-500 */
+    --card-bg-color: #1e293b; /* slate-800 */
+    --sidebar-bg-color: #1e293b; /* slate-800 */
+    --sidebar-text-color: #e2e8f0; /* slate-200 */
+    --sidebar-item-hover-bg: #334155; /* slate-700 */
+    --sidebar-item-active-bg: #3b82f6; /* blue-500 */
+    --sidebar-item-active-text: white;
+    --border-color: #334155; /* slate-700 */
+    --button-primary-bg: #3b82f6; /* blue-500 */
+    --button-primary-hover-bg: #60a5fa; /* blue-400 */
+    --button-text-color: white;
+    --header-border-color: #334155; /* slate-700 */
+    --scrollbar-thumb-bg: #475569; /* Dark scrollbar thumb */
+    --scrollbar-thumb-hover-bg: #64748b; /* Dark scrollbar thumb hover */
+}
+
+/* General Body Styling */
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color-primary);
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Custom Scrollbar Styling */
+::-webkit-scrollbar {
+    width: 8px;
+}
+::-webkit-scrollbar-track {
+    background: var(--bg-color); /* Use variable for track background */
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb {
+    background: var(--scrollbar-thumb-bg);
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: var(--scrollbar-thumb-hover-bg);
+}
+
+/* Event Card Styling */
+.event-card {
+    background-color: var(--card-bg-color);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+    /* Tailwind shadow classes are applied directly in HTML, or you can define custom ones here */
+}
+.event-card:hover {
+    transform: translateY(-5px); /* Subtle lift effect on hover */
+}
+.event-image {
+    object-fit: cover; /* Ensures the image covers the area, cropping if necessary */
+    aspect-ratio: 16 / 9; /* Common aspect ratio for images */
+}
+
+/* Sidebar Item Styling */
+.sidebar-item {
+    color: var(--sidebar-text-color);
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+.sidebar-item.active {
+    background-color: var(--sidebar-item-active-bg);
+    color: var(--sidebar-item-active-text);
+}
+.sidebar-item:not(.active):hover {
+    background-color: var(--sidebar-item-hover-bg);
+}
+
+/* Header and Text Styling using CSS Variables */
+.main-header-title {
+    color: var(--text-color-primary);
+}
+.main-header-subtitle {
+    color: var(--text-color-secondary);
+}
+.card-title {
+     color: var(--text-color-primary);
+}
+.card-date {
+    color: var(--button-primary-bg); /* Using button color for accent */
+}
+html.dark .card-date { /* Specific adjustment for dark mode if needed */
+    color: #60a5fa; /* Lighter blue for dark mode date */
+}
+.card-description {
+    color: var(--text-color-secondary);
+}
+.card-report-label, .card-report-details {
+    color: var(--text-color-muted);
+}
+
+/* Button Styling */
+.read-more-btn {
+    background-color: var(--button-primary-bg);
+    color: var(--button-text-color);
+}
+.read-more-btn:hover {
+    background-color: var(--button-primary-hover-bg);
+}
+
+/* Sidebar Title Styling */
+.sidebar-title {
+    color: var(--sidebar-text-color);
+    border-bottom-color: var(--header-border-color); /* Applied via Tailwind in HTML, or define here */
+}
+
+/* Loading Text Styling */
+.loading-text {
+    color: var(--text-color-muted);
+}
+
+/* Theme Toggle Button Styling */
+.theme-toggle-button {
+    background-color: var(--card-bg-color); /* Use card background for consistency */
+    color: var(--text-color-primary);
+    border: 1px solid var(--border-color);
+}
+.theme-toggle-button:hover {
+    background-color: var(--sidebar-item-hover-bg); /* Use sidebar hover for consistency */
+}

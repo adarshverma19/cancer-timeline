@@ -1,0 +1,50 @@
+[
+  {
+    "date": "1947-03-01",
+    "title": "Sidney Farber and the \"Aminopterin Era\"",
+    "description": "Sidney Farber, a pathologist at Children's Hospital Boston, achieves the first temporary remissions in childhood acute lymphoblastic leukemia (ALL) using the folic acid antagonist aminopterin. This marks a pivotal moment, demonstrating that chemotherapy could, in fact, impact cancer.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Sidney_Farber_1953.jpg/440px-Sidney_Farber_1953.jpg",
+    "link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3001838/",
+    "report_details": "Farber S, Diamond LK, Mercer RD, Sylvester RF Jr, Wolff JA. Temporary remissions in acute leukemia in children produced by folic acid antagonist, 4-aminopteroyl-glutamic acid (aminopterin). N Engl J Med. 1948 Jun 3;238(23):787-93."
+  },
+  {
+    "date": "1951-01-15",
+    "title": "Discovery of 6-Mercaptopurine (6-MP)",
+    "description": "Gertrude Elion and George Hitchings synthesize 6-mercaptopurine (6-MP), another antimetabolite that proves effective against leukemia. This further solidifies the role of chemotherapy.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Gertrude_Elion_and_George_Hitchings_Wellcome_PLC_Wellcome_L0031256.jpg/800px-Gertrude_Elion_and_George_Hitchings_Wellcome_PLC_Wellcome_L0031256.jpg",
+    "link": "https://www.nobelprize.org/prizes/medicine/1988/elion/facts/",
+    "report_details": "Elion GB, Burgi E, Hitchings GH. Studies on condensed pyrimidine systems. IX. The synthesis of some 6-substituted purines. J Am Chem Soc. 1952;74(2):411-414."
+  },
+  {
+    "date": "1955-10-01",
+    "title": "The VAMP Trial",
+    "description": "Emil Frei, Emil Freireich, and James Holland pioneer combination chemotherapy with the VAMP (vincristine, amethopterin, mercaptopurine, and prednisone) trial for childhood ALL, achieving higher remission rates than single-agent therapy.",
+    "image": "https://www.cancer.gov/sites/g/files/xnrzdm211/files/styles/cgov_article/public/cgov_contextual_image/100/300/2/files/Frei-Emil-750.jpg",
+    "link": "https://ashpublications.org/blood/article/113/18/4137/25917/Emil-J-Freireich-a-pioneer-of-modern-leukemia",
+    "report_details": "Frei E 3rd, Karon M, Levin RH, Freireich EJ, Taylor RJ, Hananian J, Selawry O, Holland JF, Hoogstraten B, Wolman IJ, Abir E, Sawitsky A, Lee S, Mills SD, Burgert EO Jr, Spurr CL, Patterson RB, Ebaugh FG, James GW 3rd, Moon JH. The effectiveness of combinations of antileukemic agents in inducing and maintaining remission in children with acute leukemia. Blood. 1965 Nov;26(5):642-56."
+  },
+  {
+    "date": "1955-11-15",
+    "title": "Early Radiation Therapy Advances",
+    "description": "Significant improvements in radiation therapy techniques and equipment begin to emerge, offering more precise targeting of tumors and sparing healthy tissue.",
+    "image": "https://placehold.co/600x400/7c3aed/ffffff?text=Radiation+Therapy",
+    "link": "#",
+    "report_details": "Further research into radiation oncology milestones of the mid-1950s."
+  },
+  {
+    "date": "1960-01-01",
+    "title": "Discovery of the Philadelphia Chromosome",
+    "description": "Peter Nowell and David Hungerford discover an abnormally small chromosome in patients with chronic myeloid leukemia (CML), later named the Philadelphia chromosome. This is the first consistent chromosomal abnormality linked to a specific cancer.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Peter_Nowell.jpg/440px-Peter_Nowell.jpg",
+    "link": "https://www.pennmedicine.org/news/news-releases/2013/september/penn-researcher-peter-c-nowell",
+    "report_details": "Nowell PC, Hungerford DA. A minute chromosome in human chronic granulocytic leukemia. Science. 1960;132(3438):1497."
+  },
+  {
+    "date": "1971-12-23",
+    "title": "National Cancer Act of 1971",
+    "description": "President Nixon signs the National Cancer Act, declaring a \"War on Cancer\" and significantly increasing funding for cancer research and the National Cancer Institute (NCI).",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Richard_Nixon_signs_the_National_Cancer_Act_of_1971.jpg/800px-Richard_Nixon_signs_the_National_Cancer_Act_of_1971.jpg",
+    "link": "https://www.cancer.gov/about-nci/overview/history/national-cancer-act-1971",
+    "report_details": "National Cancer Act of 1971, Public Law 92-218, December 23, 1971."
+  }
+]

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" class=""> <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timeline: The Emperor of All Maladies</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="flex flex-col md:flex-row min-h-screen">
+
+    <aside class="w-full md:w-1/4 lg:w-1/5 p-6 shadow-lg md:min-h-screen" style="background-color: var(--sidebar-bg-color);">
+        <h2 class="text-2xl font-bold mb-6 pb-2 sidebar-title">Navigation</h2>
+        <div id="sidebar-nav" class="space-y-2">
+            <button id="show-all-btn" class="w-full text-left px-4 py-2 rounded-lg font-medium sidebar-item active">Show All Events</button>
+            </div>
+    </aside>
+
+    <main class="w-full md:w-3/4 lg:w-4/5 p-6 md:p-8 lg:p-10 overflow-y-auto" style="max-height: 100vh;">
+        <header class="mb-8 flex justify-between items-center">
+            <div>
+                <h1 class="text-3xl sm:text-4xl font-bold main-header-title">Timeline of Cancer History</h1>
+                <p class="text-md sm:text-lg mt-2 main-header-subtitle">Key events from "The Emperor of All Maladies" and beyond.</p>
+            </div>
+            <button id="theme-toggle-btn" class="p-2 rounded-lg theme-toggle-button" aria-label="Toggle dark mode">
+                <svg id="theme-icon-sun" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 3v1m0 16v1m8.66-15.66l-.707.707M5.05 5.05l-.707.707M21 12h-1M4 12H3m15.66 8.66l-.707-.707M6.464 17.536l-.707-.707M12 5.5A6.5 6.5 0 1012 18.5a6.5 6.5 0 000-13z" />
+                </svg>
+                <svg id="theme-icon-moon" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
+                </svg>
+            </button>
+        </header>
+        <div id="timeline-content" class="space-y-8">
+            <p id="loading-message" class="text-lg loading-text">Loading events...</p>
+            </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -6,7 +6,10 @@ const showAllBtn = document.getElementById('show-all-btn');
 const themeToggleButton = document.getElementById('theme-toggle-btn');
 const sunIcon = document.getElementById('theme-icon-sun');
 const moonIcon = document.getElementById('theme-icon-moon');
-
+const sidebarToggleButton = document.getElementById('sidebar-toggle-btn');
+const sidebar = document.getElementById('sidebar');
+const sidebarHide = document.getElementById('sidebar-hide');
+const sidebarShow = document.getElementById('sidebar-show');
 // Global variable to store event data
 let eventData = [];
 
@@ -37,9 +40,27 @@ function toggleTheme() {
     applyTheme(newTheme);
 }
 
+function toggleSidebar() {
+    if(sidebar.style.display ==='none') {
+        sidebar.style.display = 'block';
+        sidebarHide.style.display = 'block';
+        sidebarShow.style.display = 'none';
+    }
+    else{
+        sidebar.style.display = 'none';
+        sidebarShow.style.display = 'block';
+        sidebarHide.style.display = 'none';
+    }
+}
+
 // Add event listener for theme toggle button
 if (themeToggleButton) {
     themeToggleButton.addEventListener('click', toggleTheme);
+}
+
+
+if (sidebarToggleButton) {
+    sidebarToggleButton.addEventListener('click', toggleSidebar);
 }
 
 // Load saved theme or use system preference
